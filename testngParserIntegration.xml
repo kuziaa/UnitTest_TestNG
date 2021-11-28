@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Json parser integration test suit">
+    <test name="Json parser integration test">
+
+        <groups>
+            <run>
+                <include name="integration" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="parser.JsonParserTest"></class>
+        </classes>
+    </test>
+</suite>
