@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke nad Sanity">
+    <test name="Smoke test">
+
+        <parameter name="weight" value="1"></parameter>
+
+        <groups>
+            <run>
+                <include name="smoke" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="parser.JsonParserTest"></class>
+            <class name="shop.cart.ShowItemsTest"></class>
+            <class name="shop.VirtualItemTest"></class>
+            <class name="shop.RealItemTest"></class>
+        </classes>
+    </test>
+
+    <test name="Sanity test">
+
+        <groups>
+            <run>
+                <include name="sanity" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="parser.JsonParserTest"></class>
+            <class name="shop.cart.ShowItemsTest"></class>
+            <class name="shop.VirtualItemTest"></class>
+            <class name="shop.RealItemTest"></class>
+        </classes>
+    </test>
+</suite>

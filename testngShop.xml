@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Shop test suit">
+    <test name="Shop test weight = 1">
+
+        <parameter name="weight" value="1"></parameter>
+
+        <classes>
+            <class name="shop.cart.ShowItemsTest"></class>
+            <class name="shop.VirtualItemTest"></class>
+            <class name="shop.RealItemTest"></class>
+        </classes>
+    </test>
+
+    <test name="Shop test weight = 10">
+
+        <parameter name="weight" value="10"></parameter>
+
+        <classes>
+            <class name="shop.cart.ShowItemsTest"></class>
+            <class name="shop.VirtualItemTest"></class>
+            <class name="shop.RealItemTest"></class>
+        </classes>
+    </test>
+
+    <test name="Shop test weight = 100">
+
+        <parameter name="weight" value="100"></parameter>
+
+        <classes>
+            <class name="shop.cart.ShowItemsTest"></class>
+            <class name="shop.VirtualItemTest"></class>
+            <class name="shop.RealItemTest"></class>
+        </classes>
+    </test>
+</suite>
